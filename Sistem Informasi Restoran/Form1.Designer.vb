@@ -24,80 +24,25 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuMakananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MinumDessertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PemesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PembayaranToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TentangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.MenuStrip1.SuspendLayout()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.InfoToolStripMenuItem, Me.TentangToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(821, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'MenuToolStripMenuItem
-        '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuMakananToolStripMenuItem, Me.MinumDessertToolStripMenuItem})
-        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
-        Me.MenuToolStripMenuItem.Text = "Menu"
-        '
-        'MenuMakananToolStripMenuItem
-        '
-        Me.MenuMakananToolStripMenuItem.Name = "MenuMakananToolStripMenuItem"
-        Me.MenuMakananToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.MenuMakananToolStripMenuItem.Text = "Makanan"
-        '
-        'MinumDessertToolStripMenuItem
-        '
-        Me.MinumDessertToolStripMenuItem.Name = "MinumDessertToolStripMenuItem"
-        Me.MinumDessertToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.MinumDessertToolStripMenuItem.Text = "Minum+Dessert"
-        '
-        'InfoToolStripMenuItem
-        '
-        Me.InfoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PemesananToolStripMenuItem, Me.PembayaranToolStripMenuItem})
-        Me.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem"
-        Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
-        Me.InfoToolStripMenuItem.Text = "Info"
-        '
-        'PemesananToolStripMenuItem
-        '
-        Me.PemesananToolStripMenuItem.Name = "PemesananToolStripMenuItem"
-        Me.PemesananToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.PemesananToolStripMenuItem.Text = "Pemesanan"
-        '
-        'PembayaranToolStripMenuItem
-        '
-        Me.PembayaranToolStripMenuItem.Name = "PembayaranToolStripMenuItem"
-        Me.PembayaranToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
-        Me.PembayaranToolStripMenuItem.Text = "Pembayaran"
-        '
-        'TentangToolStripMenuItem
-        '
-        Me.TentangToolStripMenuItem.Name = "TentangToolStripMenuItem"
-        Me.TentangToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-        Me.TentangToolStripMenuItem.Text = "Tentang"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(254, 87)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 49)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(284, 201)
+        Me.PictureBox1.Size = New System.Drawing.Size(300, 217)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -106,7 +51,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(12, 395)
+        Me.Label1.Location = New System.Drawing.Point(12, 393)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(616, 14)
         Me.Label1.TabIndex = 2
@@ -116,36 +61,100 @@ Partial Class Form1
         'Timer1
         '
         '
+        'Button1
+        '
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.Location = New System.Drawing.Point(313, 11)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(243, 103)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Menu"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.Location = New System.Drawing.Point(313, 200)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(243, 115)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Pemesanan"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.Location = New System.Drawing.Point(573, 65)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(205, 180)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "Pembayaran"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Cyan
+        Me.Button4.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Yellow
+        Me.Button4.Location = New System.Drawing.Point(784, 11)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(131, 76)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "More Info"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Black
+        Me.Button5.Location = New System.Drawing.Point(788, 211)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(127, 80)
+        Me.Button5.TabIndex = 7
+        Me.Button5.Text = "Exit"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Button5)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Location = New System.Drawing.Point(5, 5)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(923, 352)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Aplikasi Restoran"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(821, 441)
+        Me.ClientSize = New System.Drawing.Size(938, 416)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.Color.White
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Sistem Pemesanan"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents MenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MenuMakananToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MinumDessertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InfoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PemesananToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PembayaranToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TentangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 
 End Class

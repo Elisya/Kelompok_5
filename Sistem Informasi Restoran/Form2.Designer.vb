@@ -31,17 +31,17 @@ Partial Class Form2
         Dim Kasir_Id_MejaLabel As System.Windows.Forms.Label
         Dim Pelayan_Id_PelayanLabel As System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Kel_5_si_restoDataSet = New Sistem_Informasi_Restoran.kel_5_si_restoDataSet()
-        Me.PemesananBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PemesananTableAdapter = New Sistem_Informasi_Restoran.kel_5_si_restoDataSetTableAdapters.pemesananTableAdapter()
-        Me.TableAdapterManager = New Sistem_Informasi_Restoran.kel_5_si_restoDataSetTableAdapters.TableAdapterManager()
         Me.Id_MejaSpinEdit = New DevExpress.XtraEditors.SpinEdit()
+        Me.PemesananBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Kel_5_si_restoDataSet = New Sistem_Informasi_Restoran.kel_5_si_restoDataSet()
         Me.Nama_MakananTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.Jumlah_PesananSpinEdit = New DevExpress.XtraEditors.SpinEdit()
         Me.Menu_TambahanTextEdit = New DevExpress.XtraEditors.TextEdit()
         Me.Menu_Id_MakananSpinEdit = New DevExpress.XtraEditors.SpinEdit()
         Me.Kasir_Id_MejaSpinEdit = New DevExpress.XtraEditors.SpinEdit()
         Me.Pelayan_Id_PelayanSpinEdit = New DevExpress.XtraEditors.SpinEdit()
+        Me.PemesananTableAdapter = New Sistem_Informasi_Restoran.kel_5_si_restoDataSetTableAdapters.pemesananTableAdapter()
+        Me.TableAdapterManager = New Sistem_Informasi_Restoran.kel_5_si_restoDataSetTableAdapters.TableAdapterManager()
         Me.PemesananDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -64,9 +64,9 @@ Partial Class Form2
         Kasir_Id_MejaLabel = New System.Windows.Forms.Label()
         Pelayan_Id_PelayanLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Kel_5_si_restoDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PemesananBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Id_MejaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PemesananBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Kel_5_si_restoDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Nama_MakananTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Jumlah_PesananSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Menu_TambahanTextEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,6 +75,69 @@ Partial Class Form2
         CType(Me.Pelayan_Id_PelayanSpinEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PemesananDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Id_MejaLabel
+        '
+        Id_MejaLabel.AutoSize = True
+        Id_MejaLabel.Location = New System.Drawing.Point(0, 20)
+        Id_MejaLabel.Name = "Id_MejaLabel"
+        Id_MejaLabel.Size = New System.Drawing.Size(45, 13)
+        Id_MejaLabel.TabIndex = 0
+        Id_MejaLabel.Text = "Id Meja:"
+        '
+        'Nama_MakananLabel
+        '
+        Nama_MakananLabel.AutoSize = True
+        Nama_MakananLabel.Location = New System.Drawing.Point(-3, 42)
+        Nama_MakananLabel.Name = "Nama_MakananLabel"
+        Nama_MakananLabel.Size = New System.Drawing.Size(86, 13)
+        Nama_MakananLabel.TabIndex = 2
+        Nama_MakananLabel.Text = "Nama Makanan:"
+        '
+        'Jumlah_PesananLabel
+        '
+        Jumlah_PesananLabel.AutoSize = True
+        Jumlah_PesananLabel.Location = New System.Drawing.Point(-3, 68)
+        Jumlah_PesananLabel.Name = "Jumlah_PesananLabel"
+        Jumlah_PesananLabel.Size = New System.Drawing.Size(88, 13)
+        Jumlah_PesananLabel.TabIndex = 4
+        Jumlah_PesananLabel.Text = "Jumlah Pesanan:"
+        '
+        'Menu_TambahanLabel
+        '
+        Menu_TambahanLabel.AutoSize = True
+        Menu_TambahanLabel.Location = New System.Drawing.Point(-3, 94)
+        Menu_TambahanLabel.Name = "Menu_TambahanLabel"
+        Menu_TambahanLabel.Size = New System.Drawing.Size(91, 13)
+        Menu_TambahanLabel.TabIndex = 6
+        Menu_TambahanLabel.Text = "Menu Tambahan:"
+        '
+        'Menu_Id_MakananLabel
+        '
+        Menu_Id_MakananLabel.AutoSize = True
+        Menu_Id_MakananLabel.Location = New System.Drawing.Point(-3, 120)
+        Menu_Id_MakananLabel.Name = "Menu_Id_MakananLabel"
+        Menu_Id_MakananLabel.Size = New System.Drawing.Size(97, 13)
+        Menu_Id_MakananLabel.TabIndex = 8
+        Menu_Id_MakananLabel.Text = "Menu Id Makanan:"
+        '
+        'Kasir_Id_MejaLabel
+        '
+        Kasir_Id_MejaLabel.AutoSize = True
+        Kasir_Id_MejaLabel.Location = New System.Drawing.Point(-3, 146)
+        Kasir_Id_MejaLabel.Name = "Kasir_Id_MejaLabel"
+        Kasir_Id_MejaLabel.Size = New System.Drawing.Size(71, 13)
+        Kasir_Id_MejaLabel.TabIndex = 10
+        Kasir_Id_MejaLabel.Text = "Kasir Id Meja:"
+        '
+        'Pelayan_Id_PelayanLabel
+        '
+        Pelayan_Id_PelayanLabel.AutoSize = True
+        Pelayan_Id_PelayanLabel.Location = New System.Drawing.Point(-3, 172)
+        Pelayan_Id_PelayanLabel.Name = "Pelayan_Id_PelayanLabel"
+        Pelayan_Id_PelayanLabel.Size = New System.Drawing.Size(101, 13)
+        Pelayan_Id_PelayanLabel.TabIndex = 12
+        Pelayan_Id_PelayanLabel.Text = "Pelayan Id Pelayan:"
         '
         'GroupBox1
         '
@@ -99,15 +162,81 @@ Partial Class Form2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pemesanan"
         '
-        'Kel_5_si_restoDataSet
+        'Id_MejaSpinEdit
         '
-        Me.Kel_5_si_restoDataSet.DataSetName = "kel_5_si_restoDataSet"
-        Me.Kel_5_si_restoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.Id_MejaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Id Meja", True))
+        Me.Id_MejaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Id_MejaSpinEdit.Location = New System.Drawing.Point(104, 13)
+        Me.Id_MejaSpinEdit.Name = "Id_MejaSpinEdit"
+        Me.Id_MejaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.Id_MejaSpinEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Id_MejaSpinEdit.TabIndex = 1
         '
         'PemesananBindingSource
         '
         Me.PemesananBindingSource.DataMember = "pemesanan"
         Me.PemesananBindingSource.DataSource = Me.Kel_5_si_restoDataSet
+        '
+        'Kel_5_si_restoDataSet
+        '
+        Me.Kel_5_si_restoDataSet.DataSetName = "kel_5_si_restoDataSet"
+        Me.Kel_5_si_restoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Nama_MakananTextEdit
+        '
+        Me.Nama_MakananTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Nama Makanan", True))
+        Me.Nama_MakananTextEdit.Location = New System.Drawing.Point(104, 39)
+        Me.Nama_MakananTextEdit.Name = "Nama_MakananTextEdit"
+        Me.Nama_MakananTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Nama_MakananTextEdit.TabIndex = 3
+        '
+        'Jumlah_PesananSpinEdit
+        '
+        Me.Jumlah_PesananSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Jumlah Pesanan", True))
+        Me.Jumlah_PesananSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Jumlah_PesananSpinEdit.Location = New System.Drawing.Point(104, 65)
+        Me.Jumlah_PesananSpinEdit.Name = "Jumlah_PesananSpinEdit"
+        Me.Jumlah_PesananSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.Jumlah_PesananSpinEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Jumlah_PesananSpinEdit.TabIndex = 5
+        '
+        'Menu_TambahanTextEdit
+        '
+        Me.Menu_TambahanTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Menu Tambahan", True))
+        Me.Menu_TambahanTextEdit.Location = New System.Drawing.Point(104, 91)
+        Me.Menu_TambahanTextEdit.Name = "Menu_TambahanTextEdit"
+        Me.Menu_TambahanTextEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Menu_TambahanTextEdit.TabIndex = 7
+        '
+        'Menu_Id_MakananSpinEdit
+        '
+        Me.Menu_Id_MakananSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Menu_Id Makanan", True))
+        Me.Menu_Id_MakananSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Menu_Id_MakananSpinEdit.Location = New System.Drawing.Point(104, 117)
+        Me.Menu_Id_MakananSpinEdit.Name = "Menu_Id_MakananSpinEdit"
+        Me.Menu_Id_MakananSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.Menu_Id_MakananSpinEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Menu_Id_MakananSpinEdit.TabIndex = 9
+        '
+        'Kasir_Id_MejaSpinEdit
+        '
+        Me.Kasir_Id_MejaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Kasir_Id Meja", True))
+        Me.Kasir_Id_MejaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Kasir_Id_MejaSpinEdit.Location = New System.Drawing.Point(104, 143)
+        Me.Kasir_Id_MejaSpinEdit.Name = "Kasir_Id_MejaSpinEdit"
+        Me.Kasir_Id_MejaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.Kasir_Id_MejaSpinEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Kasir_Id_MejaSpinEdit.TabIndex = 11
+        '
+        'Pelayan_Id_PelayanSpinEdit
+        '
+        Me.Pelayan_Id_PelayanSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Pelayan_Id Pelayan", True))
+        Me.Pelayan_Id_PelayanSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.Pelayan_Id_PelayanSpinEdit.Location = New System.Drawing.Point(104, 169)
+        Me.Pelayan_Id_PelayanSpinEdit.Name = "Pelayan_Id_PelayanSpinEdit"
+        Me.Pelayan_Id_PelayanSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.Pelayan_Id_PelayanSpinEdit.Size = New System.Drawing.Size(100, 20)
+        Me.Pelayan_Id_PelayanSpinEdit.TabIndex = 13
         '
         'PemesananTableAdapter
         '
@@ -122,135 +251,6 @@ Partial Class Form2
         Me.TableAdapterManager.pelayanTableAdapter = Nothing
         Me.TableAdapterManager.pemesananTableAdapter = Me.PemesananTableAdapter
         Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Restoran.kel_5_si_restoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'Id_MejaLabel
-        '
-        Id_MejaLabel.AutoSize = True
-        Id_MejaLabel.Location = New System.Drawing.Point(0, 20)
-        Id_MejaLabel.Name = "Id_MejaLabel"
-        Id_MejaLabel.Size = New System.Drawing.Size(45, 13)
-        Id_MejaLabel.TabIndex = 0
-        Id_MejaLabel.Text = "Id Meja:"
-        '
-        'Id_MejaSpinEdit
-        '
-        Me.Id_MejaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Id Meja", True))
-        Me.Id_MejaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Id_MejaSpinEdit.Location = New System.Drawing.Point(104, 13)
-        Me.Id_MejaSpinEdit.Name = "Id_MejaSpinEdit"
-        Me.Id_MejaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Id_MejaSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Id_MejaSpinEdit.TabIndex = 1
-        '
-        'Nama_MakananLabel
-        '
-        Nama_MakananLabel.AutoSize = True
-        Nama_MakananLabel.Location = New System.Drawing.Point(-3, 42)
-        Nama_MakananLabel.Name = "Nama_MakananLabel"
-        Nama_MakananLabel.Size = New System.Drawing.Size(86, 13)
-        Nama_MakananLabel.TabIndex = 2
-        Nama_MakananLabel.Text = "Nama Makanan:"
-        '
-        'Nama_MakananTextEdit
-        '
-        Me.Nama_MakananTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Nama Makanan", True))
-        Me.Nama_MakananTextEdit.Location = New System.Drawing.Point(104, 39)
-        Me.Nama_MakananTextEdit.Name = "Nama_MakananTextEdit"
-        Me.Nama_MakananTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Nama_MakananTextEdit.TabIndex = 3
-        '
-        'Jumlah_PesananLabel
-        '
-        Jumlah_PesananLabel.AutoSize = True
-        Jumlah_PesananLabel.Location = New System.Drawing.Point(-3, 68)
-        Jumlah_PesananLabel.Name = "Jumlah_PesananLabel"
-        Jumlah_PesananLabel.Size = New System.Drawing.Size(88, 13)
-        Jumlah_PesananLabel.TabIndex = 4
-        Jumlah_PesananLabel.Text = "Jumlah Pesanan:"
-        '
-        'Jumlah_PesananSpinEdit
-        '
-        Me.Jumlah_PesananSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Jumlah Pesanan", True))
-        Me.Jumlah_PesananSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Jumlah_PesananSpinEdit.Location = New System.Drawing.Point(104, 65)
-        Me.Jumlah_PesananSpinEdit.Name = "Jumlah_PesananSpinEdit"
-        Me.Jumlah_PesananSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Jumlah_PesananSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Jumlah_PesananSpinEdit.TabIndex = 5
-        '
-        'Menu_TambahanLabel
-        '
-        Menu_TambahanLabel.AutoSize = True
-        Menu_TambahanLabel.Location = New System.Drawing.Point(-3, 94)
-        Menu_TambahanLabel.Name = "Menu_TambahanLabel"
-        Menu_TambahanLabel.Size = New System.Drawing.Size(91, 13)
-        Menu_TambahanLabel.TabIndex = 6
-        Menu_TambahanLabel.Text = "Menu Tambahan:"
-        '
-        'Menu_TambahanTextEdit
-        '
-        Me.Menu_TambahanTextEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Menu Tambahan", True))
-        Me.Menu_TambahanTextEdit.Location = New System.Drawing.Point(104, 91)
-        Me.Menu_TambahanTextEdit.Name = "Menu_TambahanTextEdit"
-        Me.Menu_TambahanTextEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Menu_TambahanTextEdit.TabIndex = 7
-        '
-        'Menu_Id_MakananLabel
-        '
-        Menu_Id_MakananLabel.AutoSize = True
-        Menu_Id_MakananLabel.Location = New System.Drawing.Point(-3, 120)
-        Menu_Id_MakananLabel.Name = "Menu_Id_MakananLabel"
-        Menu_Id_MakananLabel.Size = New System.Drawing.Size(97, 13)
-        Menu_Id_MakananLabel.TabIndex = 8
-        Menu_Id_MakananLabel.Text = "Menu Id Makanan:"
-        '
-        'Menu_Id_MakananSpinEdit
-        '
-        Me.Menu_Id_MakananSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Menu_Id Makanan", True))
-        Me.Menu_Id_MakananSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Menu_Id_MakananSpinEdit.Location = New System.Drawing.Point(104, 117)
-        Me.Menu_Id_MakananSpinEdit.Name = "Menu_Id_MakananSpinEdit"
-        Me.Menu_Id_MakananSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Menu_Id_MakananSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Menu_Id_MakananSpinEdit.TabIndex = 9
-        '
-        'Kasir_Id_MejaLabel
-        '
-        Kasir_Id_MejaLabel.AutoSize = True
-        Kasir_Id_MejaLabel.Location = New System.Drawing.Point(-3, 146)
-        Kasir_Id_MejaLabel.Name = "Kasir_Id_MejaLabel"
-        Kasir_Id_MejaLabel.Size = New System.Drawing.Size(71, 13)
-        Kasir_Id_MejaLabel.TabIndex = 10
-        Kasir_Id_MejaLabel.Text = "Kasir Id Meja:"
-        '
-        'Kasir_Id_MejaSpinEdit
-        '
-        Me.Kasir_Id_MejaSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Kasir_Id Meja", True))
-        Me.Kasir_Id_MejaSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Kasir_Id_MejaSpinEdit.Location = New System.Drawing.Point(104, 143)
-        Me.Kasir_Id_MejaSpinEdit.Name = "Kasir_Id_MejaSpinEdit"
-        Me.Kasir_Id_MejaSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Kasir_Id_MejaSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Kasir_Id_MejaSpinEdit.TabIndex = 11
-        '
-        'Pelayan_Id_PelayanLabel
-        '
-        Pelayan_Id_PelayanLabel.AutoSize = True
-        Pelayan_Id_PelayanLabel.Location = New System.Drawing.Point(-3, 172)
-        Pelayan_Id_PelayanLabel.Name = "Pelayan_Id_PelayanLabel"
-        Pelayan_Id_PelayanLabel.Size = New System.Drawing.Size(101, 13)
-        Pelayan_Id_PelayanLabel.TabIndex = 12
-        Pelayan_Id_PelayanLabel.Text = "Pelayan Id Pelayan:"
-        '
-        'Pelayan_Id_PelayanSpinEdit
-        '
-        Me.Pelayan_Id_PelayanSpinEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.PemesananBindingSource, "Pelayan_Id Pelayan", True))
-        Me.Pelayan_Id_PelayanSpinEdit.EditValue = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.Pelayan_Id_PelayanSpinEdit.Location = New System.Drawing.Point(104, 169)
-        Me.Pelayan_Id_PelayanSpinEdit.Name = "Pelayan_Id_PelayanSpinEdit"
-        Me.Pelayan_Id_PelayanSpinEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.Pelayan_Id_PelayanSpinEdit.Size = New System.Drawing.Size(100, 20)
-        Me.Pelayan_Id_PelayanSpinEdit.TabIndex = 13
         '
         'PemesananDataGridView
         '
@@ -316,7 +316,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(116, 264)
+        Me.Button2.Location = New System.Drawing.Point(96, 264)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -325,25 +325,25 @@ Partial Class Form2
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(210, 264)
+        Me.Button3.Location = New System.Drawing.Point(177, 264)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Hapuus"
+        Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(309, 264)
+        Me.Button4.Location = New System.Drawing.Point(258, 264)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Batas"
+        Me.Button4.Text = "Batal"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(407, 264)
+        Me.Button5.Location = New System.Drawing.Point(339, 264)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 6
@@ -376,9 +376,9 @@ Partial Class Form2
         Me.Text = "Form2"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.Kel_5_si_restoDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PemesananBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Id_MejaSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PemesananBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Kel_5_si_restoDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Nama_MakananTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Jumlah_PesananSpinEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Menu_TambahanTextEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
