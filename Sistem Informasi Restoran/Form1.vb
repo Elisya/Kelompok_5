@@ -8,6 +8,5 @@
             Label1.Left = Label1 + 100
         End If
     End Sub
-
-
+   
 End Class
