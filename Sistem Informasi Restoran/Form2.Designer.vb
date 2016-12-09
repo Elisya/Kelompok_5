@@ -50,12 +50,11 @@ Partial Class Form2
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.tambahbutton = New System.Windows.Forms.Button()
+        Me.simpanbutton = New System.Windows.Forms.Button()
+        Me.hapusbutton = New System.Windows.Forms.Button()
+        Me.batalbutton = New System.Windows.Forms.Button()
+        Me.keluarbutton = New System.Windows.Forms.Button()
         Id_MejaLabel = New System.Windows.Forms.Label()
         Nama_MakananLabel = New System.Windows.Forms.Label()
         Jumlah_PesananLabel = New System.Windows.Forms.Label()
@@ -143,8 +142,11 @@ Partial Class Form2
         '
         Me.GroupBox1.Controls.Add(Id_MejaLabel)
         Me.GroupBox1.Controls.Add(Me.Id_MejaSpinEdit)
+        Me.GroupBox1.Controls.Add(Me.hapusbutton)
         Me.GroupBox1.Controls.Add(Nama_MakananLabel)
+        Me.GroupBox1.Controls.Add(Me.simpanbutton)
         Me.GroupBox1.Controls.Add(Me.Nama_MakananTextEdit)
+        Me.GroupBox1.Controls.Add(Me.tambahbutton)
         Me.GroupBox1.Controls.Add(Jumlah_PesananLabel)
         Me.GroupBox1.Controls.Add(Me.Jumlah_PesananSpinEdit)
         Me.GroupBox1.Controls.Add(Menu_TambahanLabel)
@@ -260,7 +262,7 @@ Partial Class Form2
         Me.PemesananDataGridView.DataSource = Me.PemesananBindingSource
         Me.PemesananDataGridView.Location = New System.Drawing.Point(257, 28)
         Me.PemesananDataGridView.Name = "PemesananDataGridView"
-        Me.PemesananDataGridView.Size = New System.Drawing.Size(743, 220)
+        Me.PemesananDataGridView.Size = New System.Drawing.Size(743, 259)
         Me.PemesananDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -305,71 +307,58 @@ Partial Class Form2
         Me.DataGridViewTextBoxColumn7.HeaderText = "Pelayan_Id Pelayan"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'Button1
+        'tambahbutton
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 264)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.tambahbutton.Location = New System.Drawing.Point(-7, 197)
+        Me.tambahbutton.Name = "tambahbutton"
+        Me.tambahbutton.Size = New System.Drawing.Size(75, 23)
+        Me.tambahbutton.TabIndex = 2
+        Me.tambahbutton.Text = "Tambah"
+        Me.tambahbutton.UseVisualStyleBackColor = True
         '
-        'Button2
+        'simpanbutton
         '
-        Me.Button2.Location = New System.Drawing.Point(96, 264)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Simpan"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.simpanbutton.Location = New System.Drawing.Point(74, 197)
+        Me.simpanbutton.Name = "simpanbutton"
+        Me.simpanbutton.Size = New System.Drawing.Size(75, 23)
+        Me.simpanbutton.TabIndex = 3
+        Me.simpanbutton.Text = "Simpan"
+        Me.simpanbutton.UseVisualStyleBackColor = True
         '
-        'Button3
+        'hapusbutton
         '
-        Me.Button3.Location = New System.Drawing.Point(177, 264)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Hapus"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.hapusbutton.Location = New System.Drawing.Point(158, 197)
+        Me.hapusbutton.Name = "hapusbutton"
+        Me.hapusbutton.Size = New System.Drawing.Size(75, 23)
+        Me.hapusbutton.TabIndex = 4
+        Me.hapusbutton.Text = "Hapus"
+        Me.hapusbutton.UseVisualStyleBackColor = True
         '
-        'Button4
+        'batalbutton
         '
-        Me.Button4.Location = New System.Drawing.Point(258, 264)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Batal"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.batalbutton.Location = New System.Drawing.Point(49, 254)
+        Me.batalbutton.Name = "batalbutton"
+        Me.batalbutton.Size = New System.Drawing.Size(75, 23)
+        Me.batalbutton.TabIndex = 5
+        Me.batalbutton.Text = "Batal"
+        Me.batalbutton.UseVisualStyleBackColor = True
         '
-        'Button5
+        'keluarbutton
         '
-        Me.Button5.Location = New System.Drawing.Point(339, 264)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Keluar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(925, 264)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "LG"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.keluarbutton.Location = New System.Drawing.Point(141, 254)
+        Me.keluarbutton.Name = "keluarbutton"
+        Me.keluarbutton.Size = New System.Drawing.Size(75, 23)
+        Me.keluarbutton.TabIndex = 6
+        Me.keluarbutton.Text = "Keluar"
+        Me.keluarbutton.UseVisualStyleBackColor = True
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1022, 299)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.keluarbutton)
+        Me.Controls.Add(Me.batalbutton)
         Me.Controls.Add(Me.PemesananDataGridView)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form2"
@@ -409,10 +398,9 @@ Partial Class Form2
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents tambahbutton As System.Windows.Forms.Button
+    Friend WithEvents simpanbutton As System.Windows.Forms.Button
+    Friend WithEvents hapusbutton As System.Windows.Forms.Button
+    Friend WithEvents batalbutton As System.Windows.Forms.Button
+    Friend WithEvents keluarbutton As System.Windows.Forms.Button
 End Class
