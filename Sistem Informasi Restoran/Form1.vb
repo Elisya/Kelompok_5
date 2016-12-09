@@ -10,4 +10,15 @@
     End Sub
 
 
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        GroupBox1.Show()
+    End Sub
+
+    Private Sub menu_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles menu_Button.Click
+        
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+        GroupBox1.Show()
+    End Sub
 End Class

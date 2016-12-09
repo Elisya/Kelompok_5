@@ -451,12 +451,12 @@
 </value>
   </data>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
+    <value>5, 9</value>
   </metadata>
-  <data name="Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="menu_Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAABcCAYAAADUKIgAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8
+        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8
         AAAdt0lEQVR4Xu2dC3wU1b3Hgy/w/arWVovWYrVUyM4kwZAE44uKFbFAHrszG1G09tZWrdqnXs0lu0Ev
         ShXr49Jae7VUim9vra1aUanSVmmLCEn2lUAAUfAFyCO89v7+s/8ZZnZnd2ef2ZDz/Xx+mfOac2ZzzvnP
         OTNnZsoEAoFAIBAUiWg0eiA0hL0CgUBQGPbs2XOcnbGhMMSdyN6UIN210OnsFQgEguICg3UqjNCV7E0J
@@ -587,10 +587,10 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pemesanan_Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAABXCAYAAABBaAoIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8
+        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8
         AAAa3ElEQVR4Xu1dB5wURdZf8Ty/i959l3PyDPfd3acHnuFQQKIgLgioKElQQECRjKQlgwoIKBkk56iC
         IDlJFlCSIqDA7uzMbM67bHhX71VVd3VN7e7s7CzOLv3n92eqX1VXV3W/f1fo6t6oSoKbxK8LFy4CAK5A
         XFQhRI+pvY4RKiOfGF2rn6iGCxcVg+bjHyVnazr6EXhiTK0AJ4x0imq4cBF+VG971+Tm4+qQo63evRTe
@@ -708,7 +708,7 @@
         wbpwUWEIx12bCWK6Io6VwhwSXIG4iBiE0xlRaOHqIrldLRfBISrqvyyHYbyEd8DlAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pembayaran_Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI
         CQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
