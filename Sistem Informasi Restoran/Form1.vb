@@ -4,11 +4,9 @@
 
         If Label1.Left >= Me.Width Then
             Label1.Left = -Label1.Width
-        Else
-            Label1.Left = Label1 + 100
+      
         End If
     End Sub
-<<<<<<< HEAD
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -20,9 +18,6 @@
     End Sub
 
     Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-        GroupBox1.Show()
+
     End Sub
-=======
-   
->>>>>>> 1bb30abece85fd6a60d4d5b7c7f97e3163a9453a
 End Class
